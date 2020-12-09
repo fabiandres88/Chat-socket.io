@@ -1,0 +1,49 @@
+<div class="row">
+   <div class="col-12 col-md-8 mb-1">
+     <div class="embed-responsive embed-responsive-16by9">
+       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen>
+       </iframe>
+     </div>
+   </div>
+   <div class="col-12 col-md-4">
+     <div class="row h-75">
+       <div class="col-12">
+         <div class="card h-100">
+           <div class="card-body">
+             <h5 class="card-title">Chat</h5>
+             <h6 class="card-subtitle mb-2 text-muted">Welcome {{user.name}} to Classroom #1</h6>
+             <div class="messages">
+               <div *ngFor="let message of chatMessages" class="row">
+                  <div class="col-8">
+                     {{message.user.name}} - {{message.user.role}}
+                  </div>
+                  <div class="col-4">
+                     {{message.createdAt}}
+                  </div>
+                  <div class="col-12">
+                     {{message.text}}
+                  </div>             
+                </div>
+             </div>             
+           </div>
+         </div>
+       </div>        
+     </div>
+     <div class="row h-25">
+       <div class="col-12 mt-1">
+         <form #chatForm="ngForm">
+           <div class="row">
+             <div class="col-12 col-md-8">               
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                   [(ngModel)]="chatText" name="chatText">                    
+                 </textarea>
+             </div>
+             <div class="col-12 col-md-4">
+               <button type="button" class="btn btn-success w-100" (click)="sendMessage()">Send</button>
+             </div>
+           </div>            
+         </form>
+       </div>        
+     </div>
+   </div>
+ </div>
