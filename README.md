@@ -20,7 +20,7 @@ La siguiente aplicación simulará un entorno de clase virtual donde un estudian
 
 Paso siguiente se descarga/clona el repositorio Git Hub en el siguiente link:
 
-> fabiandres88/https://github.com/fabiandres88/Chat-socket.io
+> https://github.com/fabiandres88/Chat-socket.io
 
 Después de descargado se abre la carpeta del proyecto en el editor de código y se abre la terminal ubicándose en la ruta server, estando alli se ejecuta el siguiente comando en la consola:
 
@@ -117,11 +117,13 @@ Se renderiza el componente login con los siguientes campos:
 
 ```
 Academy login
+
 Username
 
 Password
 
 Login
+
 Register
 ```
 
@@ -129,6 +131,7 @@ Si el usuario está registrado se loguea, de lo contrario deberá hacer el regis
 
 ```
 Register to Academy
+
 Name
 
 Username
@@ -166,7 +169,7 @@ Después de hacer el login se renderiza el componente home donde se visualiza el
 - nodemon (unicamente como dependencia de desarrollo)
 
 
-## SUMARIO
+## Sumario
 
 Se hizo la importacion del CDN de Boostrap para el manejo del layout en el UI usando las clases que este nos provee permitiendo un layout responsive, tambien se recurrio a los metodos que provee el paquete del socket.io para el manejo de la comunicacion cliente servidor en tiempo real, aplicado al chat en vivo de la clase.
 
