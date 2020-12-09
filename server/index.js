@@ -8,21 +8,17 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const socketIo = require('socket.io');
-const bodyParser = require("body-parser");
 
 const app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.use(express.json());
-//app.use(bodyParser.json());
 app.use("/api/users", usersRouter);
 app.use("/api/messages", messagesRouter);
 app.use(cors());
 
 const serverHttp = require('http').Server(app);
-// app.use(cors({
-//    origin: process.env.CLIENT_HOST
-//  }));
+
 
 const connect = mongoose.connect(process.env.MONGO_URI)
    .then((_) => {

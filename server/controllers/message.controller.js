@@ -9,7 +9,7 @@ exports.save = async function(req, res, next) {
          text: req.body.text,
          createdAt: new Date()
       };
-
+      
       await MessageService.save(message);
 
       return res.status(httpStatusCodes.StatusCodes.CREATED).json("");
