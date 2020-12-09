@@ -14,8 +14,8 @@
              <h6 class="card-subtitle mb-2 text-muted">Welcome {{user.name}} to Classroom #1</h6>
              <div class="messages">
                <div *ngFor="let message of chatMessages" class="row">
-                  <div class="col-8">
-                     {{message.user.name}} - {{message.user.role}}
+                  <div class="col-8" *ngIf="message.user.role == 1">
+                     {{message.user.name}} - student
                   </div>
                   <div class="col-4">
                      {{message.createdAt}}
