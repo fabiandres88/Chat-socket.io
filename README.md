@@ -1,9 +1,9 @@
-### Chat-socket.io
+# Chat-socket.io
 
 La siguiente aplicación simulará un entorno de clase virtual donde un estudiante debidamente registrado y autenticado ingresara a su clase en video y ademas podra interactuar con sus compañeros de clase y el moderador de la misma mediante chat
 
 
-### Aplicaciones a utilizar
+## Aplicaciones a utilizar
 
 - Visual Studio Code o editor de código a gusto.
 
@@ -16,6 +16,7 @@ La siguiente aplicación simulará un entorno de clase virtual donde un estudian
 - MongoDb compass.
 
 > https://www.mongodb.com/try/download/compass
+
 
 Paso siguiente se descarga/clona el repositorio Git Hub en el siguiente link:
 
@@ -37,7 +38,9 @@ Paso seguido en la terminal de la ruta server vamos a ejecutar el siguiente coma
 
 > $ npm start
 
+
 Se visualizará por consola lo siguiente:
+
 
 ```
 > server@1.0.0 start
@@ -59,6 +62,7 @@ Ahora nuevamente en la ruta client vamos a ejecutar el siguiente comando:
 > $ npm start
 
 Se visualizará por consola lo siguiente:
+
 
 ```
 > client@0.0.0 start
@@ -101,11 +105,13 @@ Build at: 2020-12-09T03:44:03.963Z - Hash: be695074776e2a09496f - Time: 5691ms
 √ Compiled successfully.
 ```
 
+
 De esta manera se levantara el servidor de AngularJS y estará ejecutándose.
 
  Ahora es hora de ir al browser y ir al siguiente link:
 
 > http://localhost:4200 
+
 
 Se renderiza el componente login con los siguientes campos:
 
@@ -118,6 +124,7 @@ Password
 Login
 Register
 ```
+
 Si el usuario está registrado se loguea, de lo contrario deberá hacer el registro llenando los siguientes campos en el componente register:
 
 ```
@@ -131,9 +138,10 @@ Password
 Register
 ```
 
+
 Después de hacer el login se renderiza el componente home donde se visualiza el video embebido sobre el left margin y el chat sobre el right margin, en cual podrán interactuar en tiempo real los asistentes a la clase.
 
-### Paquetes NodeJs utilizados
+## Paquetes NodeJs utilizados
 
 - express
 
@@ -157,7 +165,8 @@ Después de hacer el login se renderiza el componente home donde se visualiza el
 
 - nodemon (unicamente como dependencia de desarrollo)
 
-### SUMARIO
+
+## SUMARIO
 
 Se hizo la importacion del CDN de Boostrap para el manejo del layout en el UI usando las clases que este nos provee permitiendo un layout responsive, tambien se recurrio a los metodos que provee el paquete del socket.io para el manejo de la comunicacion cliente servidor en tiempo real, aplicado al chat en vivo de la clase.
 
