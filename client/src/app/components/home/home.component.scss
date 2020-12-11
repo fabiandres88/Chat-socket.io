@@ -1,12 +1,19 @@
 .messages {
    overflow: auto;
    height: 310px;
+   background-color: rgba(255, 255, 255, 0.966);
+   border-radius: 5%;
+}
+.card {
+   border: none;
+}
+.card-body {
+   background-color: black;
+   border-radius: 5%;
 }
 h5 {
    font-weight: bold;
-}
-h6 {
-   border-bottom: rgb(255, 94, 0) solid 2px;   
+   color: rgb(255, 94, 0);   
 }
 .col-8 {
    color: rgb(255, 94, 0);
