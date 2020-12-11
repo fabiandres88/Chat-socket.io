@@ -141,7 +141,7 @@ Password
 Register
 
 ```
-# Modelo usuario estudiante (role 1):
+### Modelo usuario estudiante (role 1):
 
 ```
 {
@@ -154,7 +154,7 @@ Register
 }
 ```
 
-# Modelo usuario tutor (role 2):
+### Modelo usuario tutor (role 2):
 
 ```
 {
