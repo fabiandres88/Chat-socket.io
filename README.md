@@ -139,8 +139,34 @@ Username
 Password
 
 Register
+
+```
+# Modelo usuario estudiante (role 1):
+
+```
+{
+    _id:5fd0676cb83e9e1840538deb
+    role:1
+    name:Fabian Ramirez
+    username:fabiandres88
+    password:$2a$10$POSr2ahLHMdEYTeYGj8xSuEWNHbQkf.1l3ilmnE0c2up5KOP33G5m
+    __v:0
+}
 ```
 
+# Modelo usuario tutor (role 2):
+
+```
+{
+    id:5fd2e1f5b02aa9207cba6b89
+    role:2
+    name:"Carolina Jaimes"
+    username:"carolina9"
+    password:"$2a$10$CEZpB5g88DHNosDy.PKMxOMf9mE0erJH2EEs246HDobIZAVBa0RcW"
+    __v:0
+}
+```
+Por defecto el rol es de estudiante.
 
 Después de hacer el login se renderiza el componente home donde se visualiza el video embebido sobre el left margin y el chat sobre el right margin, en cual podrán interactuar en tiempo real los asistentes a la clase.
 
